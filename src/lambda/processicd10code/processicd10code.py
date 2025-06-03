@@ -220,7 +220,7 @@ def fetch_results_from_knowledge_base(bedrockClient, medical_conditions):
         )
 
         kb_output.append({
-            'mdeical_condition': medical_condition,
+            'medical_condition': medical_condition,
             'kb_context': kb_response['retrievalResults']
         })
 

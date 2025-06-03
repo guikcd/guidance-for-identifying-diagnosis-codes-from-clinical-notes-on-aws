@@ -23,7 +23,7 @@ from cdk_nag import NagSuppressions
 class PatientDiagnosisSummaryStack(Stack):
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
-	self.template_options.description = "Guidance for identifying diagnosis codes from clinical notes on AWS (SO9558)"
+        self.template_options.description = "Guidance for identifying diagnosis codes from clinical notes on AWS (SO9558)"
         # Get context values from the CDK context
         bucket_name = self.node.try_get_context("BucketName")
         self.cdk_default_region = self.node.try_get_context("DefaultRegion")

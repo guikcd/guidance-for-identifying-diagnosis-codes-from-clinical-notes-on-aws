@@ -218,7 +218,7 @@ Other Resources :
 2. Go to SageMaker Studio, stop and delete the space you created to run the notebook. Delete the user profile (`my-user-profile`) associated with the domain (`patient-history`). Delete the EFS file system associated with the domain.
 
 ```
-cdk destory --all
+cdk destroy --all
 ```
 
 After running `cdk destroy --all`, some resources may still remain in your AWS account. Follow these steps to ensure a thorough cleanup:
